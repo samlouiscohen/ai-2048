@@ -1,1 +1,1 @@
-# adversarial-search-game
+An artificial intelligence program to play the 2048-puzzle game. Implements an adversarial search algorithm to play the game intelligently. Assumes full competition on part of the computer, although it is random.
