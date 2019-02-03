@@ -15,7 +15,7 @@ class PlayerAI(BaseAI):
 		#Start the clock to ensure a move does not exceed 0.2 seconds
 		start = time.clock()
 
-		highestValueMove = 0
+		highestValueMove = -math.inf
 		bestMove = None
 		bestGrid = None
 
@@ -59,6 +59,7 @@ class PlayerAI(BaseAI):
 			maxDepth = 4
 			maxScore = 0
 			childValue = alphaBeta(childGrid, alpha, beta, maxPlayerTurn, maxDepth, startTime)
+			#childValue = alphaBetaIDS(grid, 0.2)
 
 
 
@@ -83,21 +84,3 @@ class PlayerAI(BaseAI):
 
 
 
-
-
-
-
-
-
-		#print(moves)
-		#return moves[randint(0, len(moves) - 1)] if moves else None
-
-
-
-
-
-
-	#def minimax
-
-
-	#def heuristic
